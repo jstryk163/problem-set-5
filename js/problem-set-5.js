@@ -27,6 +27,29 @@ function mario() {
   ////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 1 CODE HERE
+name = prompt("Please enter a height from 1 to 23");
+
+int main(void)
+{
+    int height;
+    printf("Please enter a height: ");
+    scanf("%d", &height);
+
+    //build pyramid
+    for (int i = height; i >= 1; i--)
+    {
+        //add spaces
+        for (int space = 1; space < i; space++)
+            printf(" ");
+
+        //add hashtags
+        for (int hash = height; hash >= i-1; hash--)
+            printf("#");
+
+        printf("\n");
+    }
+}
+
 
   ////////////////////////// DO NOT MODIFY
   check('mario', height); // DO NOT MODIFY
