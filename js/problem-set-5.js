@@ -165,8 +165,8 @@ function credit() {
   //////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 3 CODE HERE
-  let odd_sum=0;
-  let even_sum=0;
+  let oddsum=0;
+  let evensum=0;
   while (true){
     card=prompt("Enter your credit card number: ");
     if ((card.length==16 || card.length==15 || card.length==13) && Number.isInteger(Number(card))){
@@ -242,14 +242,14 @@ function guess() {
   // WRITE YOUR EXERCISE 4 CODE HERE
   let number=Math.floor(Math.random()*999)+1;
   let attempts=0;
-  let correct_answer = false;
-  while (correct_answer==false) {
+  let answer = false;
+  while (answer==false) {
     let guess=prompt('enter your guess')
     if(guess>=1 && guess<=1000 && Number.isInteger(Number(guess))){
       console.log("1");
       if (number==guess){
         attempts++;
-        correct_answer=true;
+        answer=true;
         alert("Correct Answer!")
         document.getElementById('guess-output').innerHTML="Number: "+number+"</br>Attempts: "+attempts;
       }
